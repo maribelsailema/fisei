@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FISEI | Portafolio</title>
+
+  <style>
+    :root {
+      --color-primario: #008b8b;
+      --color-secundario: #004d4d;
+      --color-fondo: #f5fafa;
+      --color-texto: #222;
+      --color-blanco: #fff;
+      --sombra: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--color-fondo);
+      color: var(--color-texto);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+      color: var(--color-blanco);
+      text-align: center;
+      padding: 4rem 1rem;
+      box-shadow: var(--sombra);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: var(--color-blanco);
+      box-shadow: var(--sombra);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: var(--color-primario);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--color-secundario);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      background: var(--color-blanco);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: var(--sombra);
+    }
+
+    section h2 {
+      text-align: center;
+      color: var(--color-primario);
+      margin-bottom: 1.5rem;
+    }
+
+    .tarjetas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .tarjeta {
+      background: var(--color-fondo);
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: var(--sombra);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .tarjeta h3 {
+      color: var(--color-secundario);
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: var(--color-secundario);
+      color: var(--color-blanco);
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #b2f5f5;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Facultad de Ingeniería en Sistemas</h1>
+    <p>Universidad Técnica de Ambato – FISEI 💻</p>
+  </header>
+
+  <nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="sobre-mi">
+    <h2>👋 Sobre mí</h2>
+    <p>
+      Hola, soy <strong>Viviana Maribel Sarco Sailema</strong>, desarrolladora de software apasionada por crear soluciones prácticas y bien estructuradas.  
+      Me gusta trabajar con tecnologías modernas y aprender cada día algo nuevo.
+    </p>
+  </section>
+
+  <section id="proyectos">
+    <h2>🚀 Proyectos recientes</h2>
+    <div class="tarjetas">
+      <div class="tarjeta">
+        <h3>Sistema de Ventas</h3>
+        <p>Aplicación web con Java y MySQL para la gestión de productos y ventas.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Portal Académico</h3>
+        <p>Desarrollo de un portal educativo con PHP y Bootstrap para control de estudiantes.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>API REST Hospital</h3>
+        <p>Servicio backend para gestión médica con Node.js y PostgreSQL.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>📬 Contacto</h2>
+    <p>¿Quieres saber más o colaborar en un proyecto?</p>
+    <p>
+      💌 <strong>vsarco7769@uta.edu.ec</strong><br />
+      🌐 <a href="https://github.com/maribelsailema" target="_blank">github.com/maribelsailema</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2025 FISEI | Diseñado con 💚 por Viviana Sarco  
+  </footer>
+
+</body>
+</html>
